@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    min-height: 100vh;
+    min-width: 1340px;
+    align-items: center;
+    justify-content: center;
+    background-color:hsl(257, 40%, 49%);
+    background-image: url(./images/bg-desktop.svg);
+    font-family: "Open Sans";
+    font-weight: 400;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* =============================================START MAIN AREA================================ */
+  .site{
+    margin-top: 50px;
+    padding:30px 80px;
+  }
+  /* ========================================START SECTION AREA================================== */
+  .container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 70px;
+  }
+
+  .main-img{
+    width: 655px;
+  }
+
+  .info{
+    width: 460px;
+  }
+
+  .info-h1{
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+    color:white;
+    font-family: "Poppins";
+  }
+
+  .info-para{
+    font-size: 1rem;
+    font-style: normal;
+    color: white;
+    margin-top: 20px;
+  }
+
+  .btn{
+    width: 30%;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-style: normal;
+    border: none;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    cursor: pointer;
+  }
+
+  .btn:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+  }
+  /* ========================================END SECTION AREA================================== */
+  .social{
+    float: right;
+  }
+
+  .icon{
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+
+  .icon:hover{
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+  }
+  /* ============================================ END MAIN AREA================================ */
+    /* =============================START FOOTER  AREA=========================== */
+    .foot {
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 20px;
+        color: hsl(0, 100%, 67%);
+        background-color: black;
+        margin-top: 50px;
+      }
+      
+      .foot a {
+        text-decoration: none;
+        color: hsl(39, 100%, 56%);
+      }
+
+      .foot a:hover{
+        color: hsl(300, 69%, 71%);
+      }
+      /* =============================END FOOTER  AREA=========================== */
+
+      /* =============================START MEDIA QUERY====================== */
+      @media screen and (max-width:768px) {
+
+        body{
+            min-width: fit-content;
+        }
+
+        .container{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social{
+            text-align: center;
+            float: none;
+            margin-top: 50px;
+        }
+
+        .btn{
+            width: 60%;
+            margin-left: 50px;
+        }
+      }
+
+      @media screen and (max-width:375px) {
+        body{
+            min-width: 375px;
+            background-image: url(./images/bg-mobile.svg);
+        }
+        
+        .site{
+            margin-top: 20px;
+            padding: 30px 20px;
+        }
+
+        .logo{
+            width: 40%;
+        }
+
+        .main-img, .info{
+            width: 90%;
+            text-align: center;
+        }
+
+        .info-h1{
+            font-size: 1.7rem;
+            font-weight: 400;
+            line-height: 35px;
+        }
+
+        .btn{
+            margin-left: 20px;
+        }
+      }
+
+      /* =============================END MEDIA QUERY====================== */
